@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.example.ec.web.RatingAssemblerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.example.ec.web.RatingAssemblerTest
+com.example.ec.web.RatingAssemblerTest  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class org.springframework.data.rest.webmvc.support.RepositoryEntityLinks.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 11.0.8+10-LTS
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 11.0.8+10-LTS
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+
+
+Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
+Caused by: java.lang.UnsupportedOperationException: Cannot define class using reflection
+Caused by: java.lang.IllegalStateException: Could not find sun.misc.Unsafe
+Caused by: java.lang.NoSuchMethodException: sun.misc.Unsafe.defineClass(java.lang.String, [B, int, int, java.lang.ClassLoader, java.security.ProtectionDomain)
+
